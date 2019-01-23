@@ -8,11 +8,16 @@
       "name": "(lldb) Launch",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/yourFileProgram",
+      "program": "${workspaceFolder}/ch2/example-2-1",
       "args": ["geoffrey-lucas-1086467-unsplash.jpg"],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
-      "environment": [],
+      "environment": [
+        {
+          "name": "DYLD_LIBRARY_PATH",
+          "value": "/Users/kazumatakata/local/lib"
+        }
+      ],
       "externalConsole": true,
       "MIMode": "lldb"
     }

@@ -1,13 +1,8 @@
 #include "opencv2/opencv.hpp"
 #include <stdio.h>
 #include <iostream>
-#include "opencv2/core.hpp"
-#include "opencv2/features2d.hpp"
-#include "opencv2/xfeatures2d.hpp"
-#include "opencv2/highgui/highgui.hpp"
 
 using namespace cv;
-using namespace cv::xfeatures2d;
 
 int main(int argc, char **argv)
 {
@@ -16,7 +11,7 @@ int main(int argc, char **argv)
     namedWindow("Output", 1);
     Mat img_1 = imread(argv[1], IMREAD_GRAYSCALE);
     int minHessian = 400;
-    Ptr<SURF> detector = SURF::create(minHessian);
+    // Ptr<SURF> detector = SURF::create(minHessian);
     //initialize a 120X350 matrix of black pixels:
     Mat output = Mat::zeros(120, 350, CV_8UC3);
 
@@ -25,10 +20,10 @@ int main(int argc, char **argv)
     //write text on the matrix:
     putText(output,
             "Hello World :)",
-            cvPoint(15, 70),
+            Point(15, 70),
             FONT_HERSHEY_PLAIN,
             3,
-            cvScalar(0, 255, 0),
+            Scalar(0, 255, 0),
             4);
 
     Vec3b data = output.at<Vec3b>(3, 4);
