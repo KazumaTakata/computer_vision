@@ -3,7 +3,8 @@ fish shell command
 
 install opencv
 
-```
+``` 
+git clone https://github.com/opencv/opencv.git
 mkdir debug 
 cd debug
 cmake -D CMAKE_BUILD_TYPE=DEBUG -D OPENCV_GENERATE_PKGCONFIG=YES  -D CMAKE_INSTALL_PREFIX=/Users/kazumatakata/local ..
