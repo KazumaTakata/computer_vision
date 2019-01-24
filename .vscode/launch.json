@@ -8,7 +8,7 @@
       "name": "(lldb) Launch",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/ch16/goodFeatureToTrack",
+      "program": "${workspaceFolder}/preprocessing/whitening",
       "args": ["geoffrey-lucas-1086467-unsplash.jpg"],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
