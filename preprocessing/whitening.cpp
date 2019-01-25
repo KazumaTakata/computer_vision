@@ -1,9 +1,6 @@
 #include "opencv2/opencv.hpp"
 #include <cmath>
-
-double CV_Mean(cv::Mat mat);
-double CV_Deviation(cv::Mat mat, double mean);
-void CV_Whiten(cv::Mat inputmat, cv::Mat outputmat);
+#include "./preprocess.hpp"
 
 int main(int argc, char **argv)
 {
