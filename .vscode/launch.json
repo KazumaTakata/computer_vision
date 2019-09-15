@@ -8,7 +8,7 @@
       "name": "(lldb) Launch",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/preprocessing/a.out",
+      "program": "${workspaceFolder}/yourFileProgram",
       "args": ["geoffrey-lucas-1086467-unsplash.jpg"],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
@@ -21,16 +21,16 @@
       "externalConsole": true,
       "miDebuggerPath": "/Applications/Xcode.app/Contents/Developer/usr/bin/lldb-mi",
       "MIMode": "lldb"
-    },
-    {
-      "name": "Launch",
-      "type": "lldb",
-      "request": "launch",
-      "program": "${workspaceFolder}/ch16/goodFeatureToTrack",
-      "args": ["geoffrey-lucas-1086467-unsplash.jpg"],
-      "env": {
-        "DYLD_LIBRARY_PATH": "/Users/kazumatakata/local/lib"
-      }
     }
+    // {
+    //   "name": "Launch",
+    //   "type": "lldb",
+    //   "request": "launch",
+    //   "program": "${workspaceFolder}/yourFileProgram",
+    //   "args": ["geoffrey-lucas-1086467-unsplash.jpg"],
+    //   "env": {
+    //     "DYLD_LIBRARY_PATH": "/Users/kazumatakata/local/lib"
+    //   }
+    // }
   ]
 }

@@ -43,6 +43,9 @@ int main(int argc, char **argv)
     Mat AxB = A.cross(B);
     Mat BxA = B.cross(A);
 
+    Mat image_blurred_with_3x3_kernel;
+    GaussianBlur(output, image_blurred_with_3x3_kernel, Size(3, 3), 0);
+
     //display the image:
     imshow("Output", output);
 
