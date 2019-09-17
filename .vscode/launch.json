@@ -21,16 +21,15 @@
       "externalConsole": true,
       "miDebuggerPath": "/Applications/Xcode.app/Contents/Developer/usr/bin/lldb-mi",
       "MIMode": "lldb"
+    },
+    {
+      "name": "Launch",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/a.out"
+      // "env": {
+      //   "DYLD_LIBRARY_PATH": "/Users/kazumatakata/local/lib"
+      // }
     }
-    // {
-    //   "name": "Launch",
-    //   "type": "lldb",
-    //   "request": "launch",
-    //   "program": "${workspaceFolder}/yourFileProgram",
-    //   "args": ["geoffrey-lucas-1086467-unsplash.jpg"],
-    //   "env": {
-    //     "DYLD_LIBRARY_PATH": "/Users/kazumatakata/local/lib"
-    //   }
-    // }
   ]
 }
